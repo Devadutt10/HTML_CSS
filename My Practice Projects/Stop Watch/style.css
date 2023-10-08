@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/library.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.timer{
+    font-size: 200px;
+    margin: 30px;
+}
+
+.start-stop-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    font-size: 75px;
+}
+
+.fa-play{
+    color: red;
+    transition: 0.5s
+}
+
+.fa-play:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.fa-rotate-left{
+    color: rgb(12, 64, 3);
+    transition: 0.5s;
+}
+
+.fa-rotate-left:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.fa-pause{
+    color: red;
+    transition: 0.5s;
+}
+
+.fa-pause:hover{
+    cursor: pointer;
+    transform: scale(1.2)
+}

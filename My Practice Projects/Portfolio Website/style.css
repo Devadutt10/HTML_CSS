@@ -1,0 +1,133 @@
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --secondary-color: #fff700;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lighting-color);
+    color: white
+}
+
+.nav-section h4{
+    margin: 20px 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.nav-section nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-section nav ul li{
+    margin: 20px 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bolder;
+}
+
+.nav-section nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-section nav ul li a:hover{
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.hero-section{
+    height: 100%;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.hero-text h2{
+    font-size: 60px;
+}
+
+.hero-text h2 span{
+    font-size: 40px;
+}
+
+.hero-text h3{
+    font-size: 50px;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+        
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }    
+  
+
+  /*Project Section */
+
+.project-section{
+    height: 100%;
+    background-color: var(--darker-color);
+}
+
+.heading-div{
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}

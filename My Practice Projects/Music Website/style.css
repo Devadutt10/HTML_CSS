@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+section{
+    scroll-margin: 50px;
+}
+
+
+
+label{
+    margin: 10px 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nav-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(55, 9, 101);
+    height: 7%;
+    color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.8s ease-in-out;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+    transition: 0.8s ease-in-out;
+}
+
+.hero-section{
+    height: 100%;
+    background-image: url(images/hero_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section h1{
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+
+.hero-section .p1{
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.hero-section .p2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.music-section{
+    background-color: #281154;
+    height: 100%;
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;   
+}
+
+.music-section .img-container {
+    position: relative;
+    left: 20%;
+    top: 30%;
+    width: 100%;
+}
+
+.music-section .container h2, .music-section .container h3, .music-section .container h4,
+.music-section .container p{
+    margin-top: 20px;
+    color: white;
+}
+
+.music-section .container h2{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.music-section .container h3{
+    font-size: 20px;
+}
+
+.music-section .container h4{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.music-section .container button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: lighter;
+    transition: 0.2s ease-in-out;
+    border: none;
+}
+
+.music-section .container button:hover{
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    opacity: 0.8;   
+}
+
+.about-section{
+    margin-top: 80vh;
+    text-align: center;
+}
+
+.about-section .container h4{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.about-section .container p{
+    margin: 50px 40px;
+    font-size: 20px;
+}
+
+.about-section .container button{
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #281154;
+    color: white;
+    border: none;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.about-section .container button:hover{
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    opacity: 0.8;  
+}
+
+.video-section{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    
+}
+
+.video-section h4{
+    margin: 30px 40px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.video-section p{
+    margin: 50px 60px
+}
+
+.giftcard-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.gift-card-text{
+    width: 500px;
+    text-align: center;
+}
+
+.gift-card-text h4{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.gift-card-text p{
+    margin: 20px 30px;
+    font-size: 20px;
+    gap: 20px
+}
+
+.giftcard-section button{
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #281154;
+    color: white;
+    border: none;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 20px
+}
+
+.giftcard-section button:hover{
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.end-section .container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #281154;
+    color: white;
+    
+}
+
+.end-section h4{
+    margin: 30px 40px;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    width: 300px;
+}
+
+.end-section p{
+    margin: 10px 30px
+}
+
+.copyright-section{
+    background-color: hsl(242, 86%, 38%);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.copyright-section p{
+    padding: 25px 0px 
+}
+
